@@ -6,7 +6,10 @@ class TextFormFieldLogin extends StatelessWidget {
   final Icon icons;
   final TextInputType keyboardKeys;
   const TextFormFieldLogin(
-      {super.key, required this.hints, required this.icons, required this.keyboardKeys});
+      {super.key,
+      required this.hints,
+      required this.icons,
+      required this.keyboardKeys});
 // hhhjjyut
   @override
   Widget build(BuildContext context) {
@@ -17,6 +20,8 @@ class TextFormFieldLogin extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 10),
       height: 40,
       child: TextFormField(
+      
+        
         keyboardType: keyboardKeys,
         decoration: InputDecoration(
             border: OutlineInputBorder(),
