@@ -18,35 +18,35 @@ class ContenarLogin extends StatelessWidget {
           borderRadius: BorderRadius.circular(20)),
       width: 342,
       height: 330,
-      child: Column(children: [
-        TextLogin(texts: 'Phone Number'),
-        TextFormFieldLogin(
+      child:  Column(children: [
+        const TextLogin(texts: 'Phone Number'),
+        const TextFormFieldLogin(
           hints: 'Enter your phone number',
           icons: Icon(Icons.phone),
           keyboardKeys: TextInputType.phone,
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
-        TextLogin(texts: 'Password'),
-        TextFormFieldLogin(
+        const TextLogin(texts: 'Password'),
+        const TextFormFieldLogin(
             hints: 'Enter your password',
             icons: Icon(Icons.lock),
             keyboardKeys: TextInputType.visiblePassword),
         Container(
-            margin: EdgeInsets.only(right: 10, top: 5),
+            margin:const EdgeInsets.only(right: 10, top: 5),
             alignment: Alignment.bottomRight,
             width: double.infinity,
-            child: Text('Forget Password?')),
+            child: const Text('Forget Password?')),
         InkWell(
             onTap: () {
               GoRouter.of(context).push(AppRouter.KSingUp);
             },
             child: Bottom(textBotom: 'LOGIN')),
         Container(
-          margin: EdgeInsets.only(left: 65),
+          margin:const EdgeInsets.only(left: 65),
           width: double.infinity,
-          child:RowText(text1: 'Don`t have on account? ', text2: 'Sign up')
+          child:const RowText(text1: 'Don`t have on account? ', text2: 'Sign up')
         ),
       ]),
     );

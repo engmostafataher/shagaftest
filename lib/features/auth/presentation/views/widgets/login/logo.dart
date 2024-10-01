@@ -11,7 +11,7 @@ class Logo
     return Container(
       width: 140,
       height: 235,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         image: DecorationImage(image: AssetImage(AssetsImage.logo))
       ),
     );

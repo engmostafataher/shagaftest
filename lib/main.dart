@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shagaftest/core/utils/app_router.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -14,6 +13,5 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,
-    );
-  }
+    );}
 }
