@@ -9,7 +9,7 @@ class Verify
   @override
   Widget build(BuildContext context) {
     return const SafeArea(child: Scaffold(
-      body: BodyVerify(),
+      body: SingleChildScrollView(child: BodyVerify()),
     ));
   }
 }
